@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Staatliches&display=swap');
+
+/* REGLAS GENERALES */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+header{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+body {
+	margin: auto;
+}
+
+
+/* MENÚ */
+
+ul {
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	display: inline-block;
+	}
+
+li {
+  	float: right;
+  	/* border-right: 1px solid #111; /* Agrega un borde a todos los items del menú */
+  	}
+
+li a {
+  	display: block;
+	  color: black;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 16px;
+	}	
+
+/* subraya al pasar mouse (black) on hover */
+li a:hover {
+			text-decoration: underline;
+  		/* background-color: #111;
+  			 color: whitesmoke; */
+			}
+
+
+/* Activa en color en la página en la que estás debo ponerlo en <a class="active" href..etc */
+.active {
+  text-decoration: underline;
+}
+
+/* -- FOOTER -- */
+.copyright{
+	font-size: 10px;
+}
+
+
+
+/* INDEX.HTML */
+/* TATTOOS.HTML */
+.mainTattoos {
+	display: flex;
+	width: 100vw;
+  	height: auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.mainTattoos__fotos {
+	flex: 1;
+	margin: 5px 5px;
+	padding: 5px 5px;
+}
+
+/* FLASHES.HTML */
+.mainFlashes {
+		display: grid;
+		grid-template-columns: 30% 30% auto;
+		grid-gap: 0.5em;
+		align-items: center;
+		justify-content: space-evenly;
+		
+	  }
+
+/* TURNOS.HTML */
+/* SOBRE MI.HTML */
+.mainSobremi{
+	width: 75%;
+	margin: auto;
+
+}
+.mainSobremi__titulo{
+	font-size: 18px;
+	padding-bottom: 10px;
+
+}
+.mainSobremi__parrafo{
+	font-size: 10px;
+
+}
+/* FAQS.HTML */
+.mainFaqs{
+	width: 75%;
+	margin: auto;
+
+}
+.mainFaqs__titulo{
+	font-size: 18px;
+	padding-bottom: 10px;
+
+}
+.mainFaqs__parrafo{
+	font-size: 10px;
+
+}
+
+/* SHOP.HTML */
+
+.mainShop {
+ width: 75%;
+ margin: auto;
+ height: 450px;
+ border: 1px solid black;
+ border-radius: 5px;
+ padding-top: 5px;
+
+}
+.mainShop__titulo{
+	font-size: 18px;
+	padding-bottom: 100px;
+
+}
+.mainShop__parrafo{
+
+}
+
+/* FORMULARIO */
+
+form {
+  /* Centrar el formulario en la página */
+  margin: 1em;
+  width: 600px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+  
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  width: 60px;
+  text-align: left;
+}
+
+input,
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+
+  /* Tamaño uniforme del campo de texto */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #000;
+}
+
+textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+
+  /* Proporcionar espacio para escribir texto */
+  height: 5em;
+}
+
+.button {
+  /* Alinear los botones con los campos de texto */
+  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+}
+
+button {
+  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+     entre las etiquetas y sus campos de texto */
+  margin-left: .5em;
+}
+
+
+/* media queries - distintas pantallas posibles*/
+
+@media screen and (max-width: 768px) {
+  	body {
+		background: #D3CCE3;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to bottom, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to bottom, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		font-size: 0.5em;
+   }
+   .mainTattoos {
+	display: flex;
+	height: 600px;
+	flex-wrap: wrap;
+	align-content: space-between;
+  }
+  .mainFlashes {
+	display: flex;
+	height: 600px;
+	flex-wrap: wrap;
+	align-content: space-between;
+  }
+}

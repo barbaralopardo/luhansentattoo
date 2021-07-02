@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../ccs/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+</head>
+
+<body class="centrar">
+	<header>
+		<h1>Lu Hansen Tattoo</h1>
+		<nav>
+			<ul>
+		  		<li><a href="shop.html">Shop</a></li>
+		  		<li><a href="faqs.html">FAQs</a></li>
+		  		<li><a href="sobremi.html">Sobre mí</a></li>
+		  		<li><a href="turnos.html">Turnos</a></li>
+		  		<li><a href="flashes.html">Flashes</a></li>
+		  		<li><a href="tattoos.html">Tattoos</a></li>
+				<li><a href="../index.html">Home</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<table class="centrar_tabla">
+			<tr>
+				<td>
+
+					<form  id="formulario" action=“formulario.php” method=“POST” enctype=“multipart/form-data”>
+						<fieldset>
+							<legend>Formulario de Contacto</legend>
+								<ul>
+									<li>
+									<label for=“nombreyapellido”>Nombre y Apellido</label>
+									<input type=“text” placeholder="Escribí tu nombre y apellido" name=“nombreyapellido” maxlength="100">
+									</li>
+									<br>
+									<li>
+									<label for=“email”>Email</label>
+									<input type=“email” name=“email”>
+									</li>
+									<br>
+									<li>
+									<label>Género:</label>
+									<label>Mujer</label>
+									<input type="radio" name="genero" value="Mujer">
+									<label>Hombre</label>
+									<input type="radio" name="genero" value="Hombre">
+									<label>Otro</label>
+									<input type="radio" name="genero" value="Otro">
+									<br>
+									</li>
+									</select>
+									<br>
+									<li>
+									<label for="mensaje">Mensaje:</label>
+									<textarea placeholder="Escribí tu mensaje o consulta" name="mensaje"></textarea>
+									</li>
+									<br>
+									<li>
+									<input type=“submit” value=Enviar>
+									</li>
+								</ul>
+						</fieldset>
+					</form>
+
+				</td>
+			</tr>
+		</table>
+	</main>
+
+	<footer>
+		<nav>
+			<ul>
+				<li><a href="https://www.instagram.com/luhansentattoo/"><img src="../imagenes/instagramlogo.png" alt="Instagram"></a></li>
+				<li><a href="../links/contacto.html"><img src="../imagenes/maillogo.jpeg" alt="Contacto"></a></li>
+				<li><a href="https://www.tumblr.com/luhansentattoo/"><img src="../imagenes/tumblrlogo.png" alt="Tumblr"></a></li>
+			</ul>
+		</nav>   		
+		<p class="copyright">Copyright 2021 Lu Hansen Tattoo</p>
+	</footer>
+</body>
+</html>
