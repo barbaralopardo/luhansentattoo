@@ -1,0 +1,190 @@
+//pasando mi css a scss
+
+//no me gusta cómo queda el css final,
+//siento que lo desordena todo, estoy loca o soy muy obse?
+//creo que a el Profe Niko se lo acomodaba distinto. Hay algún plug in?
+//Quizás sea que me falta el css.map? es lo único archivo que no se generó en comparación a la clase de sass.
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Staatliches&display=swap');
+
+//VARIABLES
+$colorBase: #f2c9cc;
+$colorNegro: #0d0d0d;
+$colorBlanco: #f2f2f2;
+
+%displayJustify {
+    display: flex;
+    justify-content: space-between;
+}
+/* Reglas generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	color: $colorNegro;  
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    background-color: $colorBase;
+    font-size: 16px;
+    height: 100vh;
+    @extend %displayJustify;
+    flex-direction: wrap; /*yo antes había puesto column*/
+    
+
+    a {
+        text-decoration: none;
+    }
+
+    .contenedor {
+        margin: 1.25em auto;
+        display: grid;
+        grid-gap: 1.25em;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            'header			header   	header'
+            'aside			aside	 	aside'
+            'contenido		contenido 	contenido'
+            'footer	 		footer 		footer';
+        
+            /* ---------- HEADER ----------*/
+        .header {
+            grid-area: header;
+            padding: 1.251em;
+            /*box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);*/
+            .logo {
+                margin-bottom: 1.25em;
+                text-transform: uppercase;
+                text-align: center;
+                letter-spacing: 3px;
+                h1 {
+                    font-size: 1.875em;
+                }
+                .iniciales-logo {
+                    padding: 0.31em;
+                    border: 0.125em solid $colorNegro;
+                    display: inline-block;
+                    font-size: 1em;
+                    margin-bottom: 0.93em;
+                }    
+            }
+            .menu {
+                border-top: 1px solid $colorNegro;
+                border-bottom: 1px solid $colorNegro;
+                @extend %displayJustify;
+                .active {
+                    background-color: $colorNegro;
+                    color: $colorBlanco !important;
+                  }
+                a {
+                    padding: 0.625em;
+                    color: $colorNegro;
+                    display: block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    width: 100%;
+                    text-align: center;
+                    transition: 0.5s ease all;
+                    font-size: 1em;
+                    
+                    &:hover {
+                        background-color: $colorNegro;
+                        color: $colorBlanco;
+                    }
+                   
+                }
+            }
+        }
+        /*---------- CONTENIDO ----------*/
+        .contenido {
+            grid-area: contenido;
+            display: grid;
+            grid-template-columns: 1;
+            grid-gap: 1.25em; 
+            .contenido-principal {
+                width: 85%;
+                margin: 0 auto;
+            }
+        }
+        /*---------- FOOTER ----------*/
+        .footer {
+            font-size: 0.75em; 
+            grid-area: footer;
+            padding: 1.56rem; 
+            /*box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);*/
+            .redes {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                font-size: 3.5em;
+                .fab {
+                    color:$colorNegro;
+                    padding: 0.2em;
+                    .fa-instagram-square {
+                        color:$colorNegro;
+                    }
+                    .fa-facebook-square {
+                        color:$colorNegro;
+                    }
+                }
+                .fa {
+                    .fa-envelope {
+                        color:$colorNegro;
+                    }
+                }  
+            }
+            .copyright {
+                display: flex;
+                justify-content: center;
+            
+            }
+        }
+    }
+}
+
+//TRAER PARTIALS
+@import 'faqs';
+@import 'tattoos';
+@import 'flashes';
+@import 'contacto';
+
+
+/*---------- MEDIA QUERIES ----------*/
+/* Dispositivos extra large (desktops 1288 and up)*/
+@media (max-width: 1200px){
+	body{
+		font-size: 14px;
+	}
+}
+
+/* Dispositivos grandes (desktops 992 and up)*/
+@media (max-width: 992px){
+	body {
+		font-size: 13px;
+	}
+	.header {
+		font-size: 13px;
+	}	
+}
+
+/* Dispositivos medianos (tablets 768 and up)*/
+@media (max-width: 768px){
+	body {
+		font-size: 12px;
+	}
+	
+}
+
+/* Dispositivos chicos(landscape phone 576 and up)*/
+@media (max-width: 576px){
+	body {
+		font-size: 11px;
+	}
+	.contenedorForm form {
+	  width: 60vh;
+  }
+}

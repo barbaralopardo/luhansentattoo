@@ -1,0 +1,18 @@
+
+
+//GALERIA DE FLASHES
+
+/*---------- FLASHES ---------*/
+
+#galeriaFlashes {
+    .col-lg-4 {
+        margin: 0;
+        padding: 1em;
+    }
+    img {
+        width: 100%;
+        &:hover {
+            border: 5px solid $colorBase;
+        }
+    }
+}

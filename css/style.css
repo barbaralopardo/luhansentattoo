@@ -1,0 +1,260 @@
+/* Reglas generales */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	color: #000;
+	
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	background-color: #ffc2c3;
+	font-size: 16px;
+	height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+a {
+	text-decoration: none;
+}
+
+
+.contenedor {
+	margin: 1.25em auto;
+	display: grid;
+	grid-gap: 1.25em;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas:
+		'header			header   	header'
+		'aside			aside	 	aside'
+		'contenido		contenido 	contenido'
+		'footer	 		footer 		footer';
+}
+
+/* ---------- HEADER ----------*/
+.header {
+	grid-area: header;
+	padding: 1.251em;
+	/*box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);*/
+}
+
+.header .logo {
+	margin-bottom: 1.25em;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+.logo h1 {
+	font-size: 1.875em;
+}
+
+.logo .iniciales-logo {
+	padding: 0.31em;
+	border: 0.125em solid #000;
+	display: inline-block;
+	font-size: 1em;
+	margin-bottom: 0.93em;
+}
+
+.menu {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu a {
+	padding: 0.625em;
+	color: #000;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	width: 100%;
+	text-align: center;
+	transition: 0.2s ease all;
+	font-size: 1em;
+}
+
+/* -- ICONO PARA SHOP */
+/*
+.contenedor .header .menu .fa {
+	color:#000;
+	font-size: 1.5em;
+	
+}
+.contenedor .header .menu .fa .fa-shopping-basket {
+	color:#000;
+}
+*/
+.menu a:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+
+/* Activa en color en la página en la que estás debo ponerlo en <a class="active" href..etc */
+.active {
+    background-color: #000;
+	color: #fff !important;
+  }
+
+
+/*---------- CONTENIDO ----------*/
+.contenido {
+	grid-area: contenido;
+	display: grid;
+	grid-template-columns: 1;
+	grid-gap: 1.25em; 
+}
+
+.contenido .contenido-principal {
+	width: 85%;
+	margin: 0 auto;
+}
+
+/*---------- FOOTER ----------*/
+.contenedor .footer {
+	font-size: 0.75em; 
+	grid-area: footer;
+	padding: 1.56rem; 
+	/*box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);*/
+}
+
+.contenedor .footer .redes {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 3.5em;
+}
+
+.contenedor .footer .copyright {
+	display: flex;
+	justify-content: center;
+
+}
+
+.contenedor .footer .redes .fab {
+	color:#000;
+	padding: 0.2em;
+}
+.contenedor .footer .redes .fab .fa-instagram-square {
+	color:#000;
+}
+.contenedor .footer .redes .fab .fa-facebook-square {
+	color:#000;
+}
+.contenedor .footer .redes .fa .fa-envelope {
+	color:#000;
+}
+
+/*---------- TATTOOS ---------*/
+
+#galeriaTattoos .col-lg-4 {
+	margin: 0;
+	padding: 1em;
+}
+#galeriaTattoos img {
+	width: 100%;
+}
+#galeriaTattoos img:hover {
+	
+	border: 5px solid #ffc2c3;
+}
+
+/*---------- TATTOOS ---------*/
+
+#galeriaFlashes .col-lg-4 {
+	margin: 0;
+	padding: 1em;
+}
+#galeriaFlashes img {
+	width: 100%;
+}
+#galeriaFlashes img:hover {
+	
+	border: 5px solid #ffc2c3;
+}
+/*---------- CONTACTO ---------*/
+.contenedor .contenedorForm {
+	grid-area: contenido;
+	grid-column: 2;
+	justify-content: center;
+	align-items: center;
+	}
+
+.contenedorForm form {
+  	width: 80vh;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+
+.btn {
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn:hover{
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn:visited {
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn:active {
+    background-color:#000;
+    border-color: #000;
+}
+
+/*---------- MEDIA QUERIES ----------*/
+/* Dispositivos extra large (desktops 1288 and up)*/
+@media (max-width: 1200px){
+	body{
+		font-size: 14px;
+	}
+}
+
+/* Dispositivos grandes (desktops 992 and up)*/
+@media (max-width: 992px){
+	body {
+		font-size: 13px;
+	}
+	.header {
+		font-size: 13px;
+	}	
+}
+
+/* Dispositivos medianos (tablets 768 and up)*/
+@media (max-width: 768px){
+	body {
+		font-size: 12px;
+	}
+	
+}
+
+/* Dispositivos chicos(landscape phone 576 and up)*/
+@media (max-width: 576px){
+	body {
+		font-size: 11px;
+	}
+	.contenedorForm form {
+	  width: 60vh;
+  }
+}
+
+
+

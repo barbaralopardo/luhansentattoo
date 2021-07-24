@@ -1,0 +1,37 @@
+// FORM DE CONTACTO
+
+
+/*---------- CONTACTO ---------*/
+.contenedor {
+    .contenedorForm {
+        grid-area: contenido;
+        grid-column: 2;
+        justify-content: center;
+        align-items: center;
+        form {
+            width: 80vh;
+            background-color: $colorBlanco;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1rem;
+        }
+    }
+}
+
+
+.btn {
+    background-color: $colorNegro;
+    border-color: $colorNegro;
+    &:hover {
+        background-color: $colorNegro;
+        border-color: $colorNegro;
+    }
+    &:visited {
+        background-color: $colorNegro;
+        border-color: $colorNegro;
+    }
+    &:active {
+        background-color:$colorNegro;
+        border-color: $colorNegro;
+    }
+}

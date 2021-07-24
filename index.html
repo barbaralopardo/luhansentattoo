@@ -1,38 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="ccs/style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="https://kit.fontawesome.com/e78fc278fc.js" crossorigin="anonymous"></script>
+	<title>Lu Hansen Tattoo</title>
 </head>
 <body>
-	<header>
-		<h1>Lu Hansen Tattoo</h1>
-		<nav>
-			<ul>
-		  		<li><a href="links/shop.html">Shop</a></li>
-		  		<li><a href="links/faqs.html">FAQs</a></li>
-		  		<li><a href="links/sobremi.html">Sobre mí</a></li>
-		  		<li><a href="links/turnos.html">Turnos</a></li>
-		  		<li><a href="links/flashes.html">Flashes</a></li>
-		  		<li><a href="links/tattoos.html">Tattoos</a></li>
-				<li><a href="index.html">Home</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<a href="links/tattoos.html"><img src="imagenes/foto_portada.png" alt="Lu Hansen tatuando"></a>
-	</main>
-	<footer>
-		<nav>
-			<ul>
-				<li><a href="https://www.instagram.com/luhansentattoo/"><img src="imagenes/instagramlogo.png" alt="Instagram"></a></li>
-				<li><a href="links/contacto.html"><img src="imagenes/maillogo.jpeg" alt="Contacto"></a></li>
-				<li><a href="https://www.tumblr.com/luhansentattoo/"><img src="imagenes/tumblrlogo.png" alt="Tumblr"></a></li>
-			</ul>
-		</nav>   		
-		<p class="copyright">Copyright 2021 Lu Hansen Tattoo</p>
-	</footer>
+	<div class="contenedor">
+		<header class="header">
+			<div class="logo">
+				<a href="index.html"><h1>Lu Hansen Tattoo</h1></a>
+			</div>
+			<nav class="menu">
+				<a href="links/faqs.html">FAQS</a>
+				<a href="links/tattoos.html">Tattoos</a>
+				<a href="links/flashes.html">Flashes</a>
+				<a href="#">Turnos</a>
+				<a href="#">Sobre mí</a>
+				<a href="#">Shop</a>
+			</nav>
+		</header>
+		<main class="contenido">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="img/slide1.png" class="d-block w-100" alt="Tatuando">
+				  </div>
+				  <div class="carousel-item">
+					<img src="img/slide2.png" class="d-block w-100" alt="Tatuando">
+				  </div>
+				  <div class="carousel-item">
+					<img src="img/slide3.png" class="d-block w-100" alt="Tatuaje en proceso">
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+		</main>
+		<footer class="footer">
+			<div class="redes">
+				
+				<a href="https://www.instagram.com/luhansentattoo/" target="_blank"><i class="fab fa-instagram-square"></i></i></a>
+				<a href="links/contacto.html"><i class="fa fa-envelope"></i></a>
+				<a href="https://www.facebook.com/luhansentattoo/" target="_blanck"><i class="fab fa-facebook-square"></i></a>
+				
+			</div>
+			<div class="copyright"><p>Copyright © 2021 Lu Hansen Tattoo</p></div>
+		</footer>
+	</div>
+<!-- BOOTSTRAP LIKNS DINÁMICOS -->
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+// ACCORDION DE PREGUNTAS FRECUENTES
+
+
+/*--- FAQS ---*/
+
+/*---- botón ir arriba ----*/
+.contenedor {
+    .ir-arriba {
+        display:inline-block;
+        padding:20px;
+        background-color: $colorNegro;
+        font-size:1.5em;
+        color: $colorBase;
+        cursor:pointer;
+        position: fixed;
+        bottom:20px;
+        right:20px;
+    }
+}

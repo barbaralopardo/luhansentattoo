@@ -1,49 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="../ccs/style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lu Hansen Tattoo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/estilos.css">
+	<script src="https://kit.fontawesome.com/e78fc278fc.js" crossorigin="anonymous"></script>
+	<title>Preguntas Frecuentes</title>
 </head>
-<body class="centrar">
-	<header>
-		<h1>Lu Hansen Tattoo</h1>
-		<nav>
-			<ul>
-		  		<li><a href="shop.html">Shop</a></li>
-		  		<li><a href="faqs.html">FAQs</a></li>
-		  		<li><a href="sobremi.html">Sobre mí</a></li>
-		  		<li><a href="turnos.html">Turnos</a></li>
-		  		<li><a href="flashes.html">Flashes</a></li>
-		  		<li><a class="active" href="tattoos.html">Tattoos</a></li>
-				<li><a href="../index.html">Home</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main class="mainTattoos">
-		<img class="mainTattoos__fotos" src="../imagenes/tattoo1.png" alt="Tattoo">
-		<img class="mainTattoos__fotos" src="../imagenes/tattoo2.png" alt="Tattoo">
-		<img class="mainTattoos__fotos"src="../imagenes/tattoo3.png" alt="Tattoo">
-		<img class="mainTattoos__fotos" src="../imagenes/tattoo1.png" alt="Tattoo">
-		<img class="mainTattoos__fotos" src="../imagenes/tattoo2.png" alt="Tattoo">
-		<img class="mainTattoos__fotos" src="../imagenes/tattoo3.png" alt="Tattoo">
-		<img class="mainTattoos__fotos" src="../imagenes/tattoo1.png" alt="Tattoo">
-		<img class="mainTattoos__fotos" src="../imagenes/tattoo2.png" alt="Tattoo">
-		<img class="mainTattoos__fotos"src="../imagenes/tattoo3.png" alt="Tattoo">
-		<img class="mainTattoos__fotos" src="../imagenes/tattoo1.png" alt="Tattoo">
-		<img class="mainTattoos__fotos" src="../imagenes/tattoo2.png" alt="Tattoo">
-		<img class="mainTattoos__fotos" src="../imagenes/tattoo3.png" alt="Tattoo">
-	</main>
-	<footer>
-		<nav>
-			<ul>
-				<li><a href="https://www.instagram.com/luhansentattoo/"><img src="../imagenes/instagramlogo.png" alt="Instagram"></a></li>
-				<li><a href="../links/contacto.html"><img src="../imagenes/maillogo.jpeg" alt="Contacto"></a></li>
-				<li><a href="https://www.tumblr.com/luhansentattoo/"><img src="../imagenes/tumblrlogo.png" alt="Tumblr"></a></li>
-			</ul>
-		</nav>   		
-		<p class="copyright">Copyright 2021 Lu Hansen Tattoo</p>
-	</footer>
+<body>
+	<div class="contenedor">
+		<header class="header">
+			<div class="logo">
+				<a href="../index.html"><h1>Lu Hansen Tattoo</h1></a>
+			</div>
+			<nav class="menu">
+				<a href="faqs.html">FAQS</a>
+				<a class="active" href="tattoos.html">Tattoos</a>
+				<a href="flashes.html">Flashes</a>
+				<a href="#">Turnos</a>
+				<a href="#">Sobre mí</a>
+				<a href="#">Shop</a>
+			</nav>
+		</header>
+		<main class="contenido">
+			<section class="contenido-principal" id="galeriaTattoos">
+				<div>
+				<h1 class="text-center">Galería de Tattoos</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="#!" data-bs-toggle="modal" data-bs-target="#modalTattoo1">
+							<img src="../img/tattoo1.png" class="rounded" alt="Galería de imágenes - Tattoos">
+						</a>
+						
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="#!" data-bs-toggle="modal" data-bs-target="#modalTattoo2">
+							<img src="../img/tattoo2.png" class="rounded" alt="Galería de imágenes - Tattoos">
+						</a>	
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<a href="#!" data-bs-toggle="modal" data-bs-target="#modalTattoo3">
+							<img src="../img/tattoo3.png" class="rounded" alt="Galería de imágenes - Tattoos">
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<img src="../img/tattoo1.png" class="rounded" alt="Galería de imágenes - Tattoos">
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<img src="../img/tattoo2.png" class="rounded" alt="Galería de imágenes - Tattoos">
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<img src="../img/tattoo3.png" class="rounded" alt="Galería de imágenes - Tattoos">
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<img src="../img/tattoo1.png" class="rounded" alt="Galería de imágenes - Tattoos">
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<img src="../img/tattoo2.png" class="rounded" alt="Galería de imágenes - Tattoos">
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<img src="../img/tattoo3.png" class="rounded" alt="Galería de imágenes - Tattoos">
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<img src="../img/tattoo1.png" class="rounded" alt="Galería de imágenes - Tattoos">
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<img src="../img/tattoo2.png" class="rounded" alt="Galería de imágenes - Tattoos">
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<img src="../img/tattoo3.png" class="rounded" alt="Galería de imágenes - Tattoos">
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="redes">
+				
+				<a href="https://www.instagram.com/luhansentattoo/" target="_blank"><i class="fab fa-instagram-square"></i></i></a>
+				<a href="contacto.html"><i class="fa fa-envelope"></i></a>
+				<a href="https://www.facebook.com/luhansentattoo/" target="_blanck"><i class="fab fa-facebook-square"></i></a>
+				
+			</div>
+			<div class="copyright"><p>Copyright © 2021 Lu Hansen Tattoo</p></div>
+		</footer>
+	</div>
+	<!-- Galería con modal -->
+	<!-- Tattoo 1-->
+	<div tabindex="-1" aria-labelledby="modalTattoo1" aria-hidden="true" class="modal fade" id="modalTattoo1">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+				<img src="../img/tattoo1.png" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- Tattoo 2-->
+	<div tabindex="-1" aria-labelledby="modalTattoo2" aria-hidden="true" class="modal fade" id="modalTattoo2">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+				<img src="../img/tattoo2.png" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- Tattoo 2-->
+	<div tabindex="-1" aria-labelledby="modalTattoo3" aria-hidden="true" class="modal fade" id="modalTattoo3">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
+			<div class="modal-content">
+				<img src="../img/tattoo3.png" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- Fin, galería con modal -->
+		
+	<!-- BOOTSTRAP LIKNS DINÁMICOS -->
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<!-- Option 2: Separate Popper and Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>
 </html>
